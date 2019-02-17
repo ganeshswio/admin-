@@ -1,0 +1,181 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Sat'" [icon]="'fa-desktop'"></app-page-header>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container-fluid">
+           
+           <div class="">
+               <h3 class="text-center hd">DAILY LOG SHEET</h3>
+           </div>
+         
+           <!-- form starts here -->
+           <div class="row">
+                <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                   <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">ID</label>
+                        <div class="col-sm-10">
+                          <select id="inputState" class="form-control">
+                              <option selected>Select Vehicle ID</option>
+                              <option>SAT-0001</option>
+                              <option>SAT-0002</option>
+                              <option>SAT-0003</option>
+                         </select>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                        <label for="date" class="col-sm-2 col-form-label">From </label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">To </label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+      
+          
+         
+         <!-- table starts here -->
+         
+         
+            <div class="" style="margin:2.5%;">
+               <div class="row">
+                   <table class="table table-sm table-bordered border  ">
+                      <thead class="table-active"> 
+                         <tr>
+                                 <th scope="col" class="cl">Date</th>
+                                 <th scope="col" class="cl">Circle</th>
+                                 <th scope="col" class="cl">Ward Number</th>
+                                 <th scope="col" class="cl">Sat Id</th>
+                                 <th scope="col" class="cl">Sat Reg No</th>
+                                 <th scope="col" class="cl">Sat Driver Name</th>
+                                 <th scope="col" class="cl">Sat Phone</th>
+                                 <th scope="col" class="cl" >Total HH</th>
+                                 <th scope="col" class="cl">Total Shops</th>
+                                 <th scope="col" class="cl">Total HH covered</th>
+                                 <th scope="col" class="cl" >Total HH not covered</th>
+                                 <th scope="col" class="cl">No of HH Segregating Waste</th>
+                                 <th scope="col" class="cl">No of HH not Segregating Waste</th>
+                                 <th scope="col" class="cl">No of HH who refuced to give Waste</th>
+                                 <th scope="col" class="cl">No of HH with door locked</th>
+                                 <th scope="col" class="cl">Total Waste</th>
+                                 <th scope="col" class="cl">Total Dry Waste</th>
+                                 <th scope="col" class="cl">Total Wet/ Mixed Waste</th>
+                         </tr>
+                       </thead> 
+                       <tbody>
+                         <tr>
+                          <td>1-02-2019</td>
+                          <td>Circle-1</td>
+                          <td>3</td>
+                          <td>SAT-OOO1</td>
+                          <td>DFDF454</td>
+                          <td>Ramesh</td>
+                          <td>9595959595</td>
+                          <td>56</td>
+                          <td>45</td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
+                          <td>12</td>
+                         
+                          <td>13</td>
+                          <td>450</td>
+                          <td>560</td>
+           
+                         </tr>
+                         <tr>
+                             <td>1-02-2019</td>
+                             <td>Circle-2</td>
+                             <td>3</td>
+                             <td>SAT-OOO1</td>
+                             <td>DFDF454</td>
+                             <td>Ramesh</td>
+                             <td>9595959595</td>
+                             <td>56</td>
+                             <td>45</td>
+                             <td>12</td>
+                             <td>12</td>
+                             <td>12</td>
+                             <td>12</td>
+                            
+                             <td>12</td>
+                             <td>12</td>
+                             <td>13</td>
+                             <td>450</td>
+                             <td>560</td>
+              
+                            </tr>
+                            <tr>
+                               <td>1-02-2019</td>
+                               <td>Circle-3</td>
+                               <td>3</td>
+                               <td>SAT-OOO1</td>
+                               <td>DFDF454</td>
+                               <td>Ramesh</td>
+                               <td>9595959595</td>
+                               <td>56</td>
+                               <td>45</td>
+                               <td>12</td>
+                               <td>12</td>
+                               <td>12</td>
+                               <td>12</td>
+                               <td>12</td>
+                               <td>12</td>
+                               <td>12</td>
+                           
+                               <td>450</td>
+                               <td>560</td>
+                
+                              </tr>
+                              <tr>
+                                 <td>1-02-2019</td>
+                                 <td>Circle-1</td>
+                                 <td>3</td>
+                                 <td>SAT-OOO1</td>
+                                 <td>DFDF454</td>
+                                 <td>Ramesh</td>
+                                 <td>9595959595</td>
+                                 <td>56</td>
+                                 <td>45</td>
+                                 <td>12</td>
+                                 <td>12</td>
+                                 <td>12</td>
+                                 <td>12</td>
+                                 <td>12</td>
+                                 <td>12</td>
+                                
+                                 <td>13</td>
+                                 <td>450</td>
+                                 <td>560</td>
+                  
+                                </tr>
+                       </tbody>
+                      
+                     </table>
+                
+             </div>
+            </div>
+         
+         
+           
+         
+        
+         
+         
+         
+         
+         
+         
+         
+        <!-- /.col-sm-4 -->
+    </div>
+    </div>
+

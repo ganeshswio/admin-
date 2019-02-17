@@ -1,0 +1,60 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Dashboard'" [icon]="'fa-bar-chart-o'"></app-page-header>
+
+    <div class="row" style="padding:0 0 20px 0;">
+            <div class="col-md-6">
+                    <div class="form-group ">
+                            <select id="inputState" class="form-control">
+                            <option selected> Select Circle</option>
+                            <option>Circle-0001</option>
+                            <option>Circle-0002</option>
+                            <option>Circle-0003</option>
+                            </select>
+                   </div>
+                   <button type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+            <div class="col-md-6">
+                    <div class="form-group ">
+                            <select id="inputState" class="form-control">
+                            <option selected> Select Ward</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            </select>
+                   </div>
+                   <button type="submit" class="btn btn-primary">Submit</button>
+            </div>      
+    </div> 
+
+    <div class="row">
+            <div class="col col-sm-6">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Pie Chart
+                        </div>
+                        <div class="card-body">
+                            <canvas baseChart height="150px" [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Bar Chart
+                </div>
+                <div class="card-body">
+                    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+             
+            </div>
+        </div>
+       
+    </div>
+   
+    
+</div>
+
+
